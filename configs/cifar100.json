@@ -1,0 +1,18 @@
+{
+  "exp_name": "cifar_example_exp_1",
+
+  "image_size": 64,
+  "image_depth": 3,
+  "num_classes": 100,
+
+  "batch_size": 64,
+  "num_epochs": 30,
+  "learning_rate": 0.01,
+
+  "max_to_keep": 2,
+
+  "num_parallel_calls": 4,
+  "save_summary_steps": 1,
+
+  "checkpoint_dir": "../experiments/cifar_example_exp_1/checkpoint"
+}

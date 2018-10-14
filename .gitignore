@@ -1,0 +1,17 @@
+# Archives
+*.tar.gz
+*.gz
+
+# Data
+
+# Model checkpoints and logs
+
+# Jupyter Notebooks
+*.ipynb_checkpoints/
+
+# Cache
+*/__pycache__
+
+# Config
+
+# Backups

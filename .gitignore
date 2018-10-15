@@ -1,6 +1,10 @@
 # Archives
 *.tar.gz
 *.gz
+*.zip
+
+# Images
+*.jpg
 
 # Data
 

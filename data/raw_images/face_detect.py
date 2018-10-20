@@ -1,7 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 14 12:00:00 2018
+
+@author: olexd
+"""
+
 import cv2
 import os
 
-rawImageFolder = "first_batch"
+rawImageFolder = "third_batch"
 exportFolder = "face_images"
 minimumSizeAllowed = 336 # face images smaller than X by X will be discarded
 scaleFactor = 1.2
@@ -28,18 +35,6 @@ def get_face_box_with_offset(x, y, w, h, imgw, imgh, offset_factor=1):
         return False, 0, 0, 0, 0
     else:
         return True, fx, fy, size, size
-#    fx = x - w * offset_factor
-#    if fx < 0:
-#        fx = 0
-#    fy = y - h * offset_factor
-#    if fy < 0:
-#        fy = 0
-#    fw = w + 2 * w * offset_factor
-#    if fx + fw > imgw:
-#        fw = imgw - fx
-#    fh = h + 2 * h * offset_factor
-#    if fy + fh > imgh:
-#        fh = imgh - fy
 
 
 # Create the haar cascade

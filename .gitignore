@@ -2,6 +2,7 @@
 *.tar.gz
 *.gz
 *.zip
+*.rar
 
 # Images
 *.jpg

@@ -4,6 +4,9 @@
 *.zip
 *.rar
 
+# Torch files (data, checkpoints, logs)
+*.pt
+
 # Images
 *.jpg
 

@@ -7,6 +7,9 @@
 # Torch files (data, checkpoints, logs)
 *.pt
 
+# Tensorboard logs
+*tfevents*
+
 # Images
 *.jpg
 

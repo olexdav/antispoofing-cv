@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import os
 
-FOLDERS_PATH = "C:\\DataSets\\AntispoofingRare3\\"
+FOLDERS_PATH = "C:\\DataSets\\AntispoofingRare8\\"
 frames_number = 20
 video_ids_file = "video_ids1.txt"
 
@@ -14,7 +14,14 @@ def save_images(video_id="zV1zK8zRCPo"):
     except Exception as e:
         return False
 
-    yt.streams.filter(subtype='mp4').first().download(filename=video_id)
+    while True:
+        try:
+            yt.streams.filter(subtype='mp4').first().download(filename=video_id)
+        except ConnectionResetError as e:
+            continue
+        except Exception as e:
+            break
+        break
 
     # print(yt.title)
     vidcap = cv2.VideoCapture(os.path.dirname(__file__) + "/{}.mp4".format(video_id))
